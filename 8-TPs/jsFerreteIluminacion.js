@@ -8,7 +8,36 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
+
+ /*ArgentinaLuz
+FelipeLamparas
+JeLuz
+HazIluminacion
+Osram*/
+
 function CalcularPrecio () 
 {
- 	
+	var cantidadLamparas;
+	var marcaLampara;
+
+	cantidadLamparas=document.getElementById('Cantidad').value;
+	marcaLampara=document.getElementById('Marca').value;
+
+ 	switch(cantidadLamparas)
+ 	{
+ 		case "6":
+ 			document.getElementById('precioDescuento').value=6*(35*0.5);
+ 		break;
+
+ 		case "5":
+ 			if(marcaLampara=="ArgentinaLuz")
+ 			{
+ 				document.getElementById('precioDescuento').value=5*(35*0.4);
+ 			}
+ 			else
+ 			{
+ 				document.getElementById('precioDescuento').value=5*(35*0.3);
+ 			}
+ 		break;
+ 	}
 }
