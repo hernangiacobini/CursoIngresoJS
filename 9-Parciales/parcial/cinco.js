@@ -1,8 +1,24 @@
 function Mostrar()
 {
+	var dia;
+
+	dia=prompt("Ingrese un día de la semana:");
+
+	switch(dia)
+	{
+		case "sabado":
+		case "domingo":
+		alert("Es fin de semana");
+		break;
+
+		default:
+		alert("A trabajar");
+	}
+
+
 	//mostrar que numero es mayor
 
-	var num1=0;
+	/*var num1=0;
 	var num2=0;
 	var num3=0;
 	var mayor=0;
@@ -31,5 +47,5 @@ function Mostrar()
 		}
 	}
 
-	alert(mayor);
+	alert(mayor);*/
 }
